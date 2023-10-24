@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-fluid-typography",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fluid typography plugin for Tailwind CSS with support for font-size, line-height and letter-spacing properties.",
   "main": "index.js",
   "scripts": {
