@@ -18,7 +18,7 @@ There are two major similar plugins:
 
 Both of these plugins are based on automatically scaling via multipliers which means it's hard to manually set each font size or break the scale if the design requires so.
 
-This plugin allows you to set each `font-size`, `line-height` and `letter-spacing` values individually. It does not give you a predefined set of sizes or sizes that follow a typescale, you have to manually define them yourself, but the plugin will scale them for you.
+This plugin allows you to set each `font-size`, `line-height`, and `letter-spacing` values individually. It does not give you a predefined set of sizes or sizes that follow a type scale, you have to manually define them yourself, but the plugin will scale them for you.
 
 # Installation
 
@@ -36,7 +36,7 @@ yarn add tailwindcss-fluid-typography
 
 Reference your static font sizes from Tailwind config and copy those. Then, add another value in the array to scale between the two values.
 
-You should check your design and set each typescale size upper and lower end based on the desktop and mobile design sizes. The plugin will automatically resize between those two sizes within the chosen screen sizes.
+You should check your design and set each type scale size upper and lower end based on the desktop and mobile design sizes. The plugin will automatically resize between those two sizes within the chosen screen sizes.
 
 The default screen sizes are `30rem` (480px) and `80rem` (1280px)
 
@@ -132,7 +132,7 @@ module.exports = {
 };
 ```
 
-Then you can use the generated classed in your HTML, just by appending `-fluid` to existing font sizes. For example:
+Then you can use the generated classes in your HTML, just by appending `-fluid` to the existing font sizes. For example:
 
 ```html
 <h1 class="text-3xl-fluid">Hello World</h1>
@@ -164,7 +164,7 @@ You can also control tracking values. You can do that by adding `letterSpacing` 
 },
 ```
 
-You can pass array with two values to scale betweeen them, or just a number to set a fixed value in case you need so.
+You can pass an array with two values to scale between them, or just a number to set a fixed value in case you need so.
 
 ```js
 {
@@ -177,4 +177,4 @@ You can pass array with two values to scale betweeen them, or just a number to s
 
 ## Contributing
 
-Feel free to make changes on your forker repo or submit a PR for review.
+Feel free to submit PR for review or suggest changes in GitHub issues.
