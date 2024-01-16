@@ -1,10 +1,12 @@
 import * as plugin from "tailwindcss/plugin";
-import { defaultSettings } from "./consts/defaultSettings";
-import { PluginConfig } from "./types/PluginConfig";
-import { generateClampValues } from "./utils/generateClampValues";
+import { defaultSettings } from "../consts/defaultSettings";
+import { PluginConfig } from "../types/PluginConfig";
+import { generateClampValues } from "../utils/generateClampValues";
 import { CSSRuleObject } from "tailwindcss/types/config";
 
-module.exports = plugin.withOptions(function (customOptions: PluginConfig) {
+export const FluidTypographyPlugin = plugin.withOptions(function (
+  customOptions: PluginConfig
+) {
   return function ({ addUtilities, e }) {
     const {
       minScreenWidth = 30,
